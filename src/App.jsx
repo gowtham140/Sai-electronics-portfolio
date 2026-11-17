@@ -1,4 +1,4 @@
-import { LazyMotion, domAnimation } from 'motion/react'
+import { LazyMotion, domMax } from 'motion/react'
 import { useContent } from './i18n/language'
 import Footer from './components/layout/Footer'
 import MobileCta from './components/layout/MobileCta'
@@ -9,6 +9,7 @@ import Faq from './components/sections/Faq'
 import Gallery from './components/sections/Gallery'
 import Hero from './components/sections/Hero'
 import Location from './components/sections/Location'
+import RecentWork from './components/sections/RecentWork'
 import Services from './components/sections/Services'
 import Testimonials from './components/sections/Testimonials'
 import WhyUs from './components/sections/WhyUs'
@@ -17,7 +18,7 @@ function App() {
   const content = useContent()
 
   return (
-    <LazyMotion features={domAnimation} strict>
+    <LazyMotion features={domMax} strict>
       <div className="relative min-h-svh overflow-x-clip">
         <a
           href="#main"
@@ -42,6 +43,7 @@ function App() {
           <Services />
           <WhyUs />
           <Gallery />
+          <RecentWork />
           <Testimonials />
           <Location />
           <Contact />

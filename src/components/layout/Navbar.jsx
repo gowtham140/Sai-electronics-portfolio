@@ -10,7 +10,15 @@ import LanguageToggle from '../ui/LanguageToggle'
 import ThemeToggle from '../ui/ThemeToggle'
 import Container from './Container'
 
-const sectionIds = ['services', 'why-us', 'work', 'reviews', 'location', 'contact']
+const sectionIds = [
+  'services',
+  'why-us',
+  'work',
+  'recent-work',
+  'reviews',
+  'location',
+  'contact',
+]
 
 export default function Navbar() {
   const content = useContent()

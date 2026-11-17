@@ -7,14 +7,15 @@ between English and Tamil from the header.
 
 **Important:** the phone number (`+91 95002 60590`), address (JSK Complex, Mela Veedhi,
 Tirukkoyilur 605757), opening hours and Google Maps link are the supplied real details.
-Services, ratings, testimonials and the nine images under `public/images/` are still
-placeholders. Replace them before publishing.
+Services, ratings, testimonials and the nine gallery images under `public/images/` are still
+placeholders. The Recent work slider uses the supplied real photos and video from
+`public/media/works/`.
 
 ## Stack
 
 - Vite 8 + React 19
 - Tailwind CSS 4 (`@tailwindcss/vite`)
-- Motion 14 (`motion/react`, `LazyMotion` + `domAnimation`)
+- Motion 14 (`motion/react`, `LazyMotion` + `domMax` for drag gestures)
 - Lucide icons
 - Self-hosted Inter, Space Grotesk and Noto Sans Tamil variable fonts
 
@@ -44,6 +45,7 @@ contains:
 - `brands`, `stats`, `promises`, `hours`, `faq`, `nav`
 - `shopPhotos` — three “Inside the shop” cards: `image`, `tag`, `title`, optional `alt`
 - `servicePhotos` — six “Service work” cards: `image`, `tag`, `title`, optional `alt`
+- `workMedia` — Recent work slider cards: `image`, `tag`, `title`, `alt` and optional `video`
 - `testimonials` — name, area, service, rating and quote
 - `ui` — every interface string, meta title/description and the WhatsApp message
 
@@ -69,6 +71,20 @@ Optimised versions used by the site live in `public/logos/`:
 The header automatically swaps between the light and dark brand marks. To replace the
 logo, put a new white-background source in `assets/logos/` and regenerate the files in
 `public/logos/` at the same sizes.
+
+## Recent work media
+
+The supplied originals are kept in `assets/works/` (outside the build output). Optimised
+copies used by the Recent work slider live in `public/media/works/`:
+
+- `work-01.jpg` … `work-13.jpg` — compressed from the supplied photos
+- `work-video.mp4` — re-encoded to 30fps with fast-start for web playback
+- `work-video-poster.jpg` — poster shown before the video starts
+
+`dist/` is regenerated on every build. Keep new originals in `assets/works/`, then copy
+compressed versions into `public/media/works/` and update `workMedia` in both language files.
+Videos are muted on load, autoplay only while at least half visible, and respect reduced
+motion; viewers can unmute with the native controls.
 
 ## Replacing the dummy photos
 
@@ -105,6 +121,7 @@ before paint to avoid a flash. `prefers-color-scheme` is used on the first visit
 ## Motion guidelines used
 
 - Scroll reveals: opacity + 14px rise, ~500ms, strong ease-out, `once: true`, 40–70ms stagger
+- Recent work carousel: 1200px perspective; active card 1.04 scale and 55px forward, neighbours tilted 8° and recessed, 500ms ease-out
 - Menu and overlays: opacity + small translate, 200ms, symmetrical exit
 - Hover/press: CSS transitions on named properties only, gated to fine pointers
 - `prefers-reduced-motion` removes movement while keeping short opacity fades

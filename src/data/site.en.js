@@ -42,6 +42,7 @@ export const en = {
     { label: 'Services', href: '#services' },
     { label: 'Why us', href: '#why-us' },
     { label: 'Our work', href: '#work' },
+    { label: 'Recent work', href: '#recent-work' },
     { label: 'Reviews', href: '#reviews' },
     { label: 'Location', href: '#location' },
     { label: 'Contact', href: '#contact' },
@@ -210,6 +211,107 @@ export const en = {
       alt: 'Dummy photo of a switchboard being upgraded',
     },
   ],
+  workMedia: [
+    {
+      type: 'image',
+      image: '/media/works/work-01.jpg',
+      title: 'Speaker setup',
+      tag: 'Audio',
+      alt: 'PockSound speakers and amplifiers arranged for testing.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-02.jpg',
+      title: '5.1 home cinema amplifier',
+      tag: 'Home theatre',
+      alt: 'Powered 5.1 home cinema amplifier on a workbench.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-03.jpg',
+      title: 'Audio installation',
+      tag: 'On site',
+      alt: 'Audio equipment and cabling during installation work.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-04.jpg',
+      title: '1080p display check',
+      tag: 'LED TV',
+      alt: 'Display equipment labelled 1080p being checked.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-05.jpg',
+      title: 'Speaker line-up',
+      tag: 'Audio',
+      alt: 'A row of speakers prepared for fitting.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-06.jpg',
+      title: 'Bench repair',
+      tag: 'Service bench',
+      alt: 'Electronics being inspected on the service bench.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-07.jpg',
+      title: 'Vehicle audio setup',
+      tag: 'Lorry & bus',
+      alt: 'Vehicle audio equipment prepared for fitting.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-08.jpg',
+      title: 'Wiring & fitting',
+      tag: 'Installation',
+      alt: 'Cabling and equipment during a fitting job.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-09.jpg',
+      title: '50-inch display setup',
+      tag: 'LED TV',
+      alt: 'A 50-inch display and its accessories prepared for setup.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-10.jpg',
+      title: 'Amplifier setup',
+      tag: 'Audio',
+      alt: 'Bravvo audio amplifier and accessories arranged for setup.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-11.jpg',
+      title: 'X10 audio processor',
+      tag: 'Audio setup',
+      alt: 'X10 digital audio processor with 5.1 decoder and DSP labelling.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-12.jpg',
+      title: 'Home theatre work',
+      tag: 'Home theatre',
+      alt: 'Home theatre components being installed.',
+    },
+    {
+      type: 'image',
+      image: '/media/works/work-13.jpg',
+      title: 'Speaker fitting',
+      tag: 'Audio',
+      alt: 'Speakers prepared for a customer installation.',
+    },
+    {
+      type: 'video',
+      image: '/media/works/work-video-poster.jpg',
+      video: '/media/works/work-video.mp4',
+      title: 'Installation highlights',
+      tag: 'Video',
+      alt: 'Short video clip showing recent installation work.',
+    },
+  ],
   testimonials: [
     {
       name: 'Ravi K.',
@@ -370,6 +472,12 @@ export const en = {
         description:
           'Bench repairs, rooftop installs, wiring upgrades and everything in between. Every job is documented with before-and-after photos for the customer.',
       },
+      recentWork: {
+        eyebrow: 'Fresh from the field',
+        title: 'Recent work, swipe through.',
+        description:
+          'A quick look at recent speaker, display and home theatre jobs. Swipe or use the arrows; videos start muted and can be unmuted with the controls.',
+      },
       reviews: {
         eyebrow: 'Customer feedback',
         title: 'Repairs people talk about.',
@@ -408,6 +516,13 @@ export const en = {
     work: {
       shopHeading: 'Inside the shop',
       serviceHeading: 'Service work',
+    },
+    recentWork: {
+      previous: 'Previous photo',
+      next: 'Next photo',
+      slide: 'Work {current} of {total}',
+      hint: 'Swipe to explore',
+      videoLabel: 'Play recent work video',
     },
     reviews: {
       from: 'From {count} local reviews',
