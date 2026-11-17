@@ -114,7 +114,7 @@ export default function Hero() {
                     return (
                       <div
                         key={item.label}
-                        className="flex items-center gap-3 rounded-xl border border-line bg-surface/90 p-3"
+                        className="flex min-w-0 items-center gap-3 rounded-xl border border-line bg-surface/90 p-3"
                       >
                         <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-accent-soft text-accent">
                           <Icon size={17} strokeWidth={1.8} aria-hidden="true" />
@@ -123,7 +123,7 @@ export default function Hero() {
                           <span className="block truncate text-[13px] font-semibold text-ink">
                             {item.label}
                           </span>
-                          <span className="block text-[11px] text-muted">{item.meta}</span>
+                          <span className="block text-[11px] leading-snug text-muted">{item.meta}</span>
                         </span>
                         <BadgeCheck
                           size={15}

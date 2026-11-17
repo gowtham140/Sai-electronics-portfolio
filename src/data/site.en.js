@@ -1,9 +1,12 @@
+const establishedYear = 2021
+const yearsInBusiness = Math.max(new Date().getFullYear() - establishedYear, 0)
+
 const shop = {
   name: 'Sri Sai Electronics',
   tagline: 'Electronics sales, service & installation you can trust.',
   intro:
-    'For over 15 years, homes and shops across Tirukkoyilur and nearby areas have trusted Sri Sai Electronics for honest diagnostics, genuine spares and repairs that actually last.',
-  established: 2008,
+    `For over ${yearsInBusiness} years, homes and shops across Tirukkoyilur and nearby areas have trusted Sri Sai Electronics for honest diagnostics, genuine spares and repairs that actually last.`,
+  established: establishedYear,
   phone: '+91 95002 60590',
   phoneHref: 'tel:+919500260590',
   whatsapp: '919500260590',
@@ -20,7 +23,7 @@ const shop = {
   directionsUrl: 'https://maps.app.goo.gl/GnQAwWNsSdFdxXir8',
   rating: { average: 4.8, count: 214 },
   responseNote: 'Most enquiries get a reply within 10 minutes during shop hours.',
-  whatsappMessage: 'Hi Sri Sai Electronics, I would like to enquire about a repair.',
+  whatsappMessage: 'வணக்கம் ஸ்ரீ சாய் எலக்ட்ரானிக்ஸ்! உங்கள் சர்வீஸ் பற்றி தெரிந்துகொள்ள விரும்புகிறேன்.',
 }
 
 shop.whatsappUrl = `https://wa.me/${shop.whatsapp}?text=${encodeURIComponent(shop.whatsappMessage)}`
@@ -31,7 +34,7 @@ export const en = {
   meta: {
     title: 'Sri Sai Electronics — Sales, Service & Installation in Tirukkoyilur',
     description:
-      'Sri Sai Electronics is your neighbourhood electronics shop in Tirukkoyilur — TV and appliance repair, CCTV installation, inverters, audio and electrical fittings. Call or WhatsApp for same-day service.',
+      'Sri Sai Electronics in Tirukkoyilur — LED TV display changes, CCTV camera fitting, lorry and bus speaker setup, home theatre installation, plus appliance, inverter and electrical service. Call or WhatsApp today.',
   },
   shop,
   fullAddress,
@@ -44,7 +47,7 @@ export const en = {
     { label: 'Contact', href: '#contact' },
   ],
   stats: [
-    { value: '15+', label: 'Years in business' },
+    { value: `${yearsInBusiness}+`, label: 'Years in business' },
     { value: '12k+', label: 'Devices repaired' },
     { value: '4.8/5', label: 'Customer rating' },
     { value: '1 yr', label: 'Repair warranty' },
@@ -52,11 +55,32 @@ export const en = {
   services: [
     {
       icon: 'Tv',
-      title: 'TV & display repair',
+      title: 'LED TV display change & repair',
       description:
-        'LED, LCD and smart TV panel, backlight and board-level repairs, with genuine spares fitted at your home.',
+        'LED TV display replacement, backlight and panel repairs, with genuine spares fitted at your home.',
       note: 'Same-day diagnosis',
       featured: true,
+    },
+    {
+      icon: 'Cctv',
+      title: 'CCTV camera fitting',
+      description:
+        'HD camera installation, DVR setup and mobile viewing for homes, shops and small offices, with neat cabling.',
+      note: 'Free site visit',
+    },
+    {
+      icon: 'Speaker',
+      title: 'Lorry & bus speaker setup',
+      description:
+        'Vehicle speaker, amplifier and wiring fitting for lorries and buses, with clean panel work and a sound check.',
+      note: 'Vehicle audio',
+    },
+    {
+      icon: 'Speaker',
+      title: 'Home theatre & audio setup',
+      description:
+        'Soundbars, speakers and home theatre installation with tidy wall mounting and cable routing.',
+      note: 'Setup included',
     },
     {
       icon: 'Wrench',
@@ -66,25 +90,11 @@ export const en = {
       note: 'Doorstep service',
     },
     {
-      icon: 'Cctv',
-      title: 'CCTV & security',
-      description:
-        'HD camera installation, DVR setup and mobile viewing for homes, shops and small offices.',
-      note: 'Free site visit',
-    },
-    {
       icon: 'BatteryCharging',
       title: 'Inverter & battery',
       description:
         'Sales, installation and battery replacement with a free load calculation for your home.',
       note: 'With warranty',
-    },
-    {
-      icon: 'Speaker',
-      title: 'Audio & home theatre',
-      description:
-        'Soundbars, speakers and home theatre setup with tidy wall mounting and cable routing.',
-      note: 'Setup included',
     },
     {
       icon: 'PlugZap',
@@ -202,39 +212,39 @@ export const en = {
   ],
   testimonials: [
     {
-      name: 'Priya R.',
+      name: 'Ravi K.',
       area: 'Tirukkoyilur',
-      service: 'Washing machine repair',
+      service: 'Lorry speaker setup',
       rating: 5,
-      text: 'Our washing machine stopped mid-cycle on a Sunday. They came the same afternoon, showed me the worn belt, and replaced it with a part that had a warranty. Fair price, no drama.',
+      text: 'They fitted new speakers in my lorry and tidied the old wiring instead of just adding more cable. The sound is clear even on the highway, and they checked everything before handing it back.',
     },
     {
       name: 'Karthik S.',
       area: 'Mela Veedhi',
-      service: 'CCTV installation',
+      service: 'CCTV fitting',
       rating: 5,
-      text: 'They planned the camera angles for my shop properly instead of just sticking four cameras on a wall. Clean cabling and the mobile app was set up before they left.',
+      text: 'They planned the camera angles for my shop properly, ran the cables neatly and set up mobile viewing before they left. I can check the shop from home whenever I want.',
     },
     {
       name: 'Meena V.',
       area: 'Kallakurichi',
-      service: 'TV repair',
+      service: 'LED TV display change',
       rating: 5,
-      text: 'Two other shops told me to buy a new TV. Sri Sai repaired the backlight for a fraction of the cost and it has been running for over a year now.',
+      text: 'Two other shops told me to buy a new TV. Sri Sai changed the LED display panel for a fraction of the price and the picture looks even and bright again.',
     },
     {
-      name: 'Arun P.',
+      name: 'Sundar P.',
       area: 'Tirukkoyilur',
-      service: 'Inverter & battery',
+      service: 'Bus speaker setup',
       rating: 5,
-      text: 'They calculated our actual load first, then suggested a smaller inverter than we planned to buy. Saved us money and it handles the whole house comfortably.',
+      text: 'They fitted speakers across the bus and balanced the volume so the passengers at the back can hear clearly. The wiring is hidden properly and the finish looks neat.',
     },
     {
       name: 'Fathima N.',
       area: 'Tirukkoyilur',
-      service: 'AC service',
-      rating: 4,
-      text: 'Deep cleaning was thorough and they covered the furniture before starting. Only reason for four stars is that the visit slot moved by an hour.',
+      service: 'Home theatre setup',
+      rating: 5,
+      text: 'They set up our home theatre, mounted the speakers and hid the cables so the hall still looks clean. The sound testing and remote setup were done before they left.',
     },
     {
       name: 'Suresh K.',
@@ -280,6 +290,11 @@ export const en = {
         'Yes. We do camera layouts, DVR setup, switchboards, lighting and wiring for shops and small offices, and can visit outside shop hours so your business is not disrupted.',
     },
     {
+      question: 'Do you fit speakers in lorries and buses?',
+      answer:
+        'Yes. We fit speakers, amplifiers and wiring in lorries and buses, then check the sound at the vehicle. Bring it to the shop or ask about an on-site visit.',
+    },
+    {
       question: 'What payment methods do you accept?',
       answer:
         'Cash, UPI, and cards. For larger installations we share a written quote first, and a GST invoice is available on request.',
@@ -287,7 +302,7 @@ export const en = {
   ],
   ui: {
     skip: 'Skip to content',
-    brandTagline: 'Since 2008 · Tirukkoyilur',
+    brandTagline: `Since ${establishedYear} · Tirukkoyilur`,
     nav: {
       primary: 'Primary',
       mobile: 'Mobile',
@@ -323,9 +338,9 @@ export const en = {
       panelTitle: 'What we do',
       walkIns: 'Walk-ins welcome',
       menu: [
-        { label: 'TV & display repair', meta: 'Same-day diagnosis' },
-        { label: 'CCTV & security', meta: 'Free site visit' },
-        { label: 'Inverter & battery', meta: 'With warranty' },
+        { label: 'LED TV display change', meta: 'Same-day diagnosis' },
+        { label: 'CCTV camera fitting', meta: 'Free site visit' },
+        { label: 'Lorry & bus speakers', meta: 'Sound check included' },
       ],
       notSure: 'Not sure what’s wrong?',
       warranty: '1-year warranty on major repairs · Genuine spares',
@@ -341,7 +356,7 @@ export const en = {
         eyebrow: 'Our services',
         title: 'Fix it, fit it, or upgrade it.',
         description:
-          'From a single faulty remote to a complete CCTV and inverter setup, we handle the whole job — and explain it in plain language.',
+          'From LED TV display changes and CCTV fitting to lorry, bus and home theatre audio setups, we handle the whole job — and explain it in plain language.',
       },
       why: {
         eyebrow: 'Why Sri Sai Electronics',
@@ -386,7 +401,7 @@ export const en = {
       byNumbers: 'By the numbers',
       trusted: 'Trusted locally',
       quote:
-        'We’d rather talk you out of an unnecessary replacement than sell you one. That’s how we have kept customers for fifteen years.',
+        `We’d rather talk you out of an unnecessary replacement than sell you one. That’s how we have kept customers for ${yearsInBusiness}+ years.`,
       attribution: 'The team at Sri Sai Electronics',
       seeWork: 'See our work',
     },
