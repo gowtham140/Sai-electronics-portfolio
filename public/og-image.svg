@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07080b" />
+      <stop offset="1" stop-color="#0f1520" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38bdf8" />
+      <stop offset="1" stop-color="#818cf8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.2" r="0.8">
+      <stop stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <g transform="translate(96 96)">
+    <rect width="56" height="56" rx="14" fill="url(#accent)" />
+    <path d="M32 8 17 31h8.8L24 48l15.8-23.5H31L32 8Z" fill="#06121c" />
+    <text x="76" y="24" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#f4f6fa">SAI <tspan fill="#97a1b1">Electronics</tspan></text>
+    <text x="76" y="46" font-family="Inter, system-ui, sans-serif" font-size="11" letter-spacing="3" fill="#97a1b1">SALES · SERVICE · INSTALLATION</text>
+  </g>
+
+  <g transform="translate(96 246)">
+    <text font-family="Space Grotesk, Inter, sans-serif" font-size="66" font-weight="600" letter-spacing="-3" fill="#f4f6fa">Electronics that work.</text>
+    <text y="82" font-family="Space Grotesk, Inter, sans-serif" font-size="66" font-weight="600" letter-spacing="-3" fill="#f4f6fa">Service that <tspan fill="url(#accent)">lasts</tspan>.</text>
+  </g>
+
+  <g transform="translate(96 468)">
+    <rect width="230" height="44" rx="22" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.4" />
+    <circle cx="26" cy="22" r="5" fill="#38bdf8" />
+    <text x="42" y="28" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#e6f6ff">Since 2008 · Coimbatore</text>
+  </g>
+
+  <g transform="translate(880 430)">
+    <rect width="230" height="120" rx="20" fill="#0d0f14" stroke="#1e222b" />
+    <text x="24" y="36" font-family="Inter, system-ui, sans-serif" font-size="12" letter-spacing="2" fill="#97a1b1">RATED</text>
+    <text x="24" y="78" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="600" fill="#f4f6fa">4.8 / 5</text>
+    <text x="24" y="100" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#97a1b1">214 local reviews</text>
+  </g>
+</svg>

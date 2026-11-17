@@ -1,0 +1,440 @@
+const shop = {
+  name: 'Sri Sai Electronics',
+  tagline: 'Electronics sales, service & installation you can trust.',
+  intro:
+    'For over 15 years, homes and shops across Tirukkoyilur and nearby areas have trusted Sri Sai Electronics for honest diagnostics, genuine spares and repairs that actually last.',
+  established: 2008,
+  phone: '+91 95002 60590',
+  phoneHref: 'tel:+919500260590',
+  whatsapp: '919500260590',
+  email: 'hello@saielectronics.in',
+  address: {
+    line1: 'JSK Complex',
+    line2: 'Mela Veedhi',
+    city: 'Tirukkoyilur',
+    state: 'Tamil Nadu',
+    pin: '605757',
+  },
+  mapEmbedUrl:
+    'https://maps.google.com/maps?q=Sri%20Sai%20electronics%20and%20digital%20audios%4011.9676074%2C79.2012035&z=17&output=embed',
+  directionsUrl: 'https://maps.app.goo.gl/GnQAwWNsSdFdxXir8',
+  rating: { average: 4.8, count: 214 },
+  responseNote: 'Most enquiries get a reply within 10 minutes during shop hours.',
+  whatsappMessage: 'Hi Sri Sai Electronics, I would like to enquire about a repair.',
+}
+
+shop.whatsappUrl = `https://wa.me/${shop.whatsapp}?text=${encodeURIComponent(shop.whatsappMessage)}`
+
+const fullAddress = `${shop.address.line1}, ${shop.address.line2}, ${shop.address.city}, ${shop.address.state} ${shop.address.pin}`
+
+export const en = {
+  meta: {
+    title: 'Sri Sai Electronics — Sales, Service & Installation in Tirukkoyilur',
+    description:
+      'Sri Sai Electronics is your neighbourhood electronics shop in Tirukkoyilur — TV and appliance repair, CCTV installation, inverters, audio and electrical fittings. Call or WhatsApp for same-day service.',
+  },
+  shop,
+  fullAddress,
+  nav: [
+    { label: 'Services', href: '#services' },
+    { label: 'Why us', href: '#why-us' },
+    { label: 'Our work', href: '#work' },
+    { label: 'Reviews', href: '#reviews' },
+    { label: 'Location', href: '#location' },
+    { label: 'Contact', href: '#contact' },
+  ],
+  stats: [
+    { value: '15+', label: 'Years in business' },
+    { value: '12k+', label: 'Devices repaired' },
+    { value: '4.8/5', label: 'Customer rating' },
+    { value: '1 yr', label: 'Repair warranty' },
+  ],
+  services: [
+    {
+      icon: 'Tv',
+      title: 'TV & display repair',
+      description:
+        'LED, LCD and smart TV panel, backlight and board-level repairs, with genuine spares fitted at your home.',
+      note: 'Same-day diagnosis',
+      featured: true,
+    },
+    {
+      icon: 'Wrench',
+      title: 'Home appliance service',
+      description:
+        'Washing machines, refrigerators, mixers and microwaves — diagnosed and repaired at your doorstep.',
+      note: 'Doorstep service',
+    },
+    {
+      icon: 'Cctv',
+      title: 'CCTV & security',
+      description:
+        'HD camera installation, DVR setup and mobile viewing for homes, shops and small offices.',
+      note: 'Free site visit',
+    },
+    {
+      icon: 'BatteryCharging',
+      title: 'Inverter & battery',
+      description:
+        'Sales, installation and battery replacement with a free load calculation for your home.',
+      note: 'With warranty',
+    },
+    {
+      icon: 'Speaker',
+      title: 'Audio & home theatre',
+      description:
+        'Soundbars, speakers and home theatre setup with tidy wall mounting and cable routing.',
+      note: 'Setup included',
+    },
+    {
+      icon: 'PlugZap',
+      title: 'Electrical fittings',
+      description:
+        'Wiring, switchboards, fans and lighting upgrades, handled safely by licensed technicians.',
+      note: 'Licensed work',
+    },
+    {
+      icon: 'Snowflake',
+      title: 'AC installation & service',
+      description:
+        'Split and window AC installation, gas top-up, deep cleaning and annual maintenance plans.',
+      note: 'AMC available',
+    },
+    {
+      icon: 'ShoppingBag',
+      title: 'Sales & accessories',
+      description:
+        'New appliances, certified refurbished units, remotes, mounts, cables and hard-to-find spares.',
+      note: 'In-store',
+    },
+  ],
+  brands: [
+    'Samsung',
+    'LG',
+    'Sony',
+    'Panasonic',
+    'Whirlpool',
+    'Havells',
+    'Crompton',
+    'V-Guard',
+    'Philips',
+    'Bosch',
+  ],
+  promises: [
+    {
+      icon: 'Timer',
+      title: 'Same-day diagnosis',
+      text: 'Bring it in before 4 pm or book a visit — most issues are identified the same day.',
+    },
+    {
+      icon: 'BadgeCheck',
+      title: 'Genuine spares, written warranty',
+      text: 'Original or OEM-grade parts, with a one-year warranty on major repairs.',
+    },
+    {
+      icon: 'IndianRupee',
+      title: 'Upfront pricing',
+      text: 'You approve the estimate before we start. No surprise line items on the bill.',
+    },
+    {
+      icon: 'ShieldCheck',
+      title: 'Technicians you can trust',
+      text: 'Background-checked staff, uniformed visits and a neat, safe finish every time.',
+    },
+  ],
+  shopPhotos: [
+    {
+      image: '/images/shop/storefront.svg',
+      title: 'Storefront',
+      tag: 'The shop',
+      alt: 'Dummy photo of the Sri Sai Electronics storefront',
+    },
+    {
+      image: '/images/shop/service-desk.svg',
+      title: 'Service desk',
+      tag: 'Workbench',
+      alt: 'Dummy photo of the service workbench',
+    },
+    {
+      image: '/images/shop/parts-wall.svg',
+      title: 'Parts & accessories',
+      tag: 'In stock',
+      alt: 'Dummy photo of spare parts and accessories on display',
+    },
+  ],
+  servicePhotos: [
+    {
+      image: '/images/services/tv-repair.svg',
+      title: 'Panel-level TV repair',
+      tag: 'Service bench',
+      alt: 'Dummy photo of a TV panel repair on the bench',
+    },
+    {
+      image: '/images/services/cctv-install.svg',
+      title: 'CCTV for a shop front',
+      tag: 'Installation',
+      alt: 'Dummy photo of a CCTV camera being installed at a shop',
+    },
+    {
+      image: '/images/services/inverter-battery.svg',
+      title: 'Inverter & battery setup',
+      tag: 'Home install',
+      alt: 'Dummy photo of an inverter and battery installation',
+    },
+    {
+      image: '/images/services/home-theatre.svg',
+      title: 'Home theatre wiring',
+      tag: 'Audio',
+      alt: 'Dummy photo of a home theatre setup with speakers',
+    },
+    {
+      image: '/images/services/appliance-visit.svg',
+      title: 'Appliance service visit',
+      tag: 'Doorstep',
+      alt: 'Dummy photo of a technician servicing a washing machine',
+    },
+    {
+      image: '/images/services/switchboard.svg',
+      title: 'Switchboard upgrade',
+      tag: 'Electrical',
+      alt: 'Dummy photo of a switchboard being upgraded',
+    },
+  ],
+  testimonials: [
+    {
+      name: 'Priya R.',
+      area: 'Tirukkoyilur',
+      service: 'Washing machine repair',
+      rating: 5,
+      text: 'Our washing machine stopped mid-cycle on a Sunday. They came the same afternoon, showed me the worn belt, and replaced it with a part that had a warranty. Fair price, no drama.',
+    },
+    {
+      name: 'Karthik S.',
+      area: 'Mela Veedhi',
+      service: 'CCTV installation',
+      rating: 5,
+      text: 'They planned the camera angles for my shop properly instead of just sticking four cameras on a wall. Clean cabling and the mobile app was set up before they left.',
+    },
+    {
+      name: 'Meena V.',
+      area: 'Kallakurichi',
+      service: 'TV repair',
+      rating: 5,
+      text: 'Two other shops told me to buy a new TV. Sri Sai repaired the backlight for a fraction of the cost and it has been running for over a year now.',
+    },
+    {
+      name: 'Arun P.',
+      area: 'Tirukkoyilur',
+      service: 'Inverter & battery',
+      rating: 5,
+      text: 'They calculated our actual load first, then suggested a smaller inverter than we planned to buy. Saved us money and it handles the whole house comfortably.',
+    },
+    {
+      name: 'Fathima N.',
+      area: 'Tirukkoyilur',
+      service: 'AC service',
+      rating: 4,
+      text: 'Deep cleaning was thorough and they covered the furniture before starting. Only reason for four stars is that the visit slot moved by an hour.',
+    },
+    {
+      name: 'Suresh K.',
+      area: 'Nearby area',
+      service: 'Electrical work',
+      rating: 5,
+      text: 'Rewired the switchboard and added two new points without damaging the tiles. The technician explained what he was doing at every step. Will call them again.',
+    },
+  ],
+  hours: [
+    { day: 'Monday', short: 'Mon', jsDay: 1, time: '9:00 am – 9:00 pm' },
+    { day: 'Tuesday', short: 'Tue', jsDay: 2, time: '9:00 am – 9:00 pm' },
+    { day: 'Wednesday', short: 'Wed', jsDay: 3, time: '9:00 am – 9:00 pm' },
+    { day: 'Thursday', short: 'Thu', jsDay: 4, time: '9:00 am – 9:00 pm' },
+    { day: 'Friday', short: 'Fri', jsDay: 5, time: '9:00 am – 9:00 pm' },
+    { day: 'Saturday', short: 'Sat', jsDay: 6, time: '9:00 am – 9:00 pm' },
+    { day: 'Sunday', short: 'Sun', jsDay: 0, time: '9:00 am – 2:00 pm' },
+  ],
+  faq: [
+    {
+      question: 'Do you repair at home or in the shop?',
+      answer:
+        'Both. TVs, washing machines, refrigerators and ACs are usually serviced at your home. Small items like mixers, remotes and boards are better diagnosed on our bench — we will tell you which when you call.',
+    },
+    {
+      question: 'Is there a visiting or inspection fee?',
+      answer:
+        'A small visiting fee applies within Tirukkoyilur, and it is waived when you go ahead with the repair. You will always hear the estimate before any work starts.',
+    },
+    {
+      question: 'Are the spare parts original?',
+      answer:
+        'We use original parts where the manufacturer supplies them, and OEM-grade equivalents where they do not. Every major repair carries a one-year warranty on the part and the work.',
+    },
+    {
+      question: 'Which areas do you cover?',
+      answer:
+        'Tirukkoyilur, Mela Veedhi, Kallakurichi and nearby areas. Share your location on WhatsApp and we will confirm the visit slot.',
+    },
+    {
+      question: 'Do you handle CCTV and electrical work for shops?',
+      answer:
+        'Yes. We do camera layouts, DVR setup, switchboards, lighting and wiring for shops and small offices, and can visit outside shop hours so your business is not disrupted.',
+    },
+    {
+      question: 'What payment methods do you accept?',
+      answer:
+        'Cash, UPI, and cards. For larger installations we share a written quote first, and a GST invoice is available on request.',
+    },
+  ],
+  ui: {
+    skip: 'Skip to content',
+    brandTagline: 'Since 2008 · Tirukkoyilur',
+    nav: {
+      primary: 'Primary',
+      mobile: 'Mobile',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+    },
+    theme: {
+      appearance: 'Appearance',
+      toDark: 'Switch to dark theme',
+      toLight: 'Switch to light theme',
+    },
+    language: {
+      label: 'Language',
+      switchTo: 'Switch to Tamil',
+      display: 'தமிழ்',
+    },
+    actions: {
+      call: 'Call',
+      callNow: 'Call now',
+      whatsapp: 'WhatsApp',
+      messageWhatsApp: 'Message on WhatsApp',
+      messageUs: 'Message us',
+      getDirections: 'Get directions',
+      askWhatsApp: 'Ask us on WhatsApp',
+      sendPhoto: 'Send a photo on WhatsApp',
+    },
+    hero: {
+      badge: 'Since {year} · Mela Veedhi, Tirukkoyilur',
+      title1: 'Electronics that work.',
+      title2: 'Service that ',
+      accent: 'lasts',
+      suffix: '.',
+      panelTitle: 'What we do',
+      walkIns: 'Walk-ins welcome',
+      menu: [
+        { label: 'TV & display repair', meta: 'Same-day diagnosis' },
+        { label: 'CCTV & security', meta: 'Free site visit' },
+        { label: 'Inverter & battery', meta: 'With warranty' },
+      ],
+      notSure: 'Not sure what’s wrong?',
+      warranty: '1-year warranty on major repairs · Genuine spares',
+      reviewsSuffix: 'reviews',
+      genuine: 'Genuine spares',
+    },
+    brands: {
+      label: 'Brands we service',
+      title: 'Brands we service & install',
+    },
+    sections: {
+      services: {
+        eyebrow: 'Our services',
+        title: 'Fix it, fit it, or upgrade it.',
+        description:
+          'From a single faulty remote to a complete CCTV and inverter setup, we handle the whole job — and explain it in plain language.',
+      },
+      why: {
+        eyebrow: 'Why Sri Sai Electronics',
+        title: 'The difference is in the details.',
+        description:
+          'Anyone can replace a part. We take the time to find out why it failed, so you are not back on the phone three weeks later.',
+      },
+      work: {
+        eyebrow: 'Our work',
+        title: 'Inside the shop and on the job.',
+        description:
+          'Bench repairs, rooftop installs, wiring upgrades and everything in between. Every job is documented with before-and-after photos for the customer.',
+      },
+      reviews: {
+        eyebrow: 'Customer feedback',
+        title: 'Repairs people talk about.',
+        description:
+          'A few words from customers across Tirukkoyilur and nearby areas. Feedback shown here is collected in-store and from Google reviews.',
+      },
+      location: {
+        eyebrow: 'Find us',
+        title: 'Easy to reach, easy to park.',
+        description:
+          'Walk in with your device, or book a doorstep visit. Find us at JSK Complex on Mela Veedhi, Tirukkoyilur.',
+      },
+      contact: {
+        eyebrow: 'Contact',
+        title: 'Tell us what needs fixing.',
+        description:
+          'Describe the problem in a call or send a photo on WhatsApp. We will give you an honest estimate and the earliest slot — often the same day.',
+      },
+      faq: {
+        eyebrow: 'Good to know',
+        title: 'Questions we get every week.',
+      },
+    },
+    servicesCta: {
+      title: 'Not sure what’s wrong?',
+      text: 'Send a photo or a short video on WhatsApp. We’ll tell you if it’s worth repairing.',
+    },
+    why: {
+      byNumbers: 'By the numbers',
+      trusted: 'Trusted locally',
+      quote:
+        'We’d rather talk you out of an unnecessary replacement than sell you one. That’s how we have kept customers for fifteen years.',
+      attribution: 'The team at Sri Sai Electronics',
+      seeWork: 'See our work',
+    },
+    work: {
+      shopHeading: 'Inside the shop',
+      serviceHeading: 'Service work',
+    },
+    reviews: {
+      from: 'From {count} local reviews',
+      stars: '{rating} out of 5 stars',
+    },
+    location: {
+      addressTitle: 'Shop address',
+      hoursTitle: 'Opening hours',
+      today: '(today)',
+      directions: 'Get directions',
+      landmark: 'Landmark: JSK Complex, Mela Veedhi',
+      mapTitle: 'Map showing {name} in Tirukkoyilur',
+    },
+    contact: {
+      callButton: 'Call {phone}',
+      channels: [
+        { label: 'Call the shop', hint: 'Fastest for urgent repairs' },
+        { label: 'WhatsApp', hint: 'Send photos and get an estimate' },
+        { label: 'Email', hint: 'Quotes, invoices and AMC plans' },
+      ],
+    },
+    faq: {
+      stillUnsure: 'Still unsure?',
+    },
+    footer: {
+      blurb:
+        'Honest electronics sales, repair and installation for homes and shops across Tirukkoyilur and nearby areas.',
+      explore: 'Explore',
+      visit: 'Visit the shop',
+      call: 'Call',
+      email: 'Email',
+      hours: [
+        { label: 'Mon – Sat', value: '9:00 am – 9:00 pm' },
+        { label: 'Sunday', value: '9:00 am – 2:00 pm' },
+      ],
+      rights: '© {year} {name}. All rights reserved.',
+      gst: 'GST invoice available on request · Tirukkoyilur, Tamil Nadu',
+    },
+    mobileCta: {
+      label: 'Quick contact',
+      call: 'Call now',
+      whatsapp: 'WhatsApp',
+    },
+  },
+}

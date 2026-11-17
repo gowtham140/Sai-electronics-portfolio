@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/logos/favicon.png" />
+    <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)" />
+    <title>Sri Sai Electronics — Sales, Service &amp; Installation in Tirukkoyilur</title>
+    <meta
+      name="description"
+      content="Sri Sai Electronics is your neighbourhood electronics shop in Tirukkoyilur — TV and appliance repair, CCTV installation, inverters, audio and electrical fittings. Call or WhatsApp for same-day service."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sri Sai Electronics" />
+    <meta property="og:title" content="Sri Sai Electronics — Sales, Service &amp; Installation" />
+    <meta
+      property="og:description"
+      content="Trusted electronics sales, repair and installation in Tirukkoyilur. TV, appliances, CCTV, inverters, audio and electrical work."
+    />
+    <meta property="og:image" content="/logos/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sri Sai Electronics — Sales, Service &amp; Installation" />
+    <meta
+      name="twitter:description"
+      content="Trusted electronics sales, repair and installation in Tirukkoyilur."
+    />
+    <meta name="twitter:image" content="/logos/og-image.png" />
+
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('sai-theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', dark)
+
+          var storedLanguage = localStorage.getItem('sai-lang')
+          if (storedLanguage === 'ta') document.documentElement.lang = 'ta'
+        } catch (error) {
+          document.documentElement.classList.remove('dark')
+        }
+      })()
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ElectronicsStore",
+        "name": "Sri Sai Electronics",
+        "description": "Electronics sales, repair and installation shop in Tirukkoyilur.",
+        "image": "/logos/og-image.png",
+        "telephone": "+91-95002-60590",
+        "hasMap": "https://maps.app.goo.gl/GnQAwWNsSdFdxXir8",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "JSK Complex, Mela Veedhi",
+          "addressLocality": "Tirukkoyilur",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "605757",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
